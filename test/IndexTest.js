@@ -4,6 +4,7 @@ var http = require('./httpHelper');
 
 describe('KarmaExpressMock', function() {
 
+  var reporter;
   var config = {
     port: 3334,
     pathToConfig: '/resources/BasicConfig.json'
@@ -12,7 +13,7 @@ describe('KarmaExpressMock', function() {
   var mockLogger = {
     create: function() {
       return {
-        info: function(msg) {
+        debug: function(msg) {
           console.log('INFO: ' + msg);
         }
       };
@@ -20,12 +21,11 @@ describe('KarmaExpressMock', function() {
   };
 
   before(function(done) {
-    plugin['preprocessor:express-karma'][1](__dirname, config, mockLogger);
+    reporter = new plugin['reporter:express-mock'][1](__dirname, config, mockLogger);
     setTimeout(done, 1000);
   });
 
   after(function(done) {
-    var reporter = new plugin['reporter:express-karma'][1](mockLogger);
     reporter.onExit(done);
   });
 

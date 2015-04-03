@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Karma plugin for Express Mock",
   "main": "./lib/index.js",
+  "scripts": {
+    "test": "grunt"
+  },
   "dependencies": {
     "express-mock": "cifa/express-mock#v0.2.0"
   },
