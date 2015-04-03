@@ -1,0 +1,33 @@
+{
+  "name": "karma-express-mock",
+  "version": "0.1.0",
+  "description": "Karma plugin for Express Mock",
+  "main": "./lib/index.js",
+  "dependencies": {
+    "express-mock": "cifa/express-mock#v0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "2.2.1",
+    "istanbul": "0.3.11",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-cli": "0.1.13",
+    "grunt-simple-mocha": "0.4.0",
+    "grunt-mocha-istanbul": "2.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cifa/karma-express-mock.git"
+  },
+  "keywords": [
+    "karma",
+    "exxpress",
+    "mock"
+  ],
+  "author": "Ales Cirnfus <cirnfus.ales@gmail.com> (https://github.com/cifa)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cifa/karma-express-mock/issues"
+  },
+  "homepage": "https://github.com/cifa/karma-express-mock"
+}
