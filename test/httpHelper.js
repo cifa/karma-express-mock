@@ -1,7 +1,7 @@
 var http = require('http');
 
 (function() {
-  var port = 3333;
+  var port = 3334;
   var host = 'localhost';
   var url = 'http://' + host + ':' + port;
   var opts = {
