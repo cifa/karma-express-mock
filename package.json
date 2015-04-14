@@ -7,7 +7,7 @@
     "test": "grunt"
   },
   "dependencies": {
-    "express-mock": "cifa/express-mock#v0.2.0"
+    "express-mock": "0.3.0"
   },
   "devDependencies": {
     "mocha": "2.2.1",
