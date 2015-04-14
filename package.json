@@ -1,6 +1,6 @@
 {
   "name": "karma-express-mock",
-  "version": "0.1.0",
+  "version": "v0.2.0",
   "description": "Karma plugin for Express Mock",
   "main": "./lib/index.js",
   "scripts": {
